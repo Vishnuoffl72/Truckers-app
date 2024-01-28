@@ -1,0 +1,28 @@
+{   "job1":[
+    {   "pic":"container-on-hcv-fedex.jpg",
+        "place":"Tirunelveli - Chennai",
+        "name":"empty pallets",
+        "company":"vishnu ltd..",
+        "amount":3000
+    },
+    {   "pic":"goodsimage.jpg",
+        "place":"Tirunelveli - Madurai",
+        "name":"Container",
+        "company":"vishnu ltd..",
+        "amount":5000
+    },
+    {   "pic":"petroleum-2.jpg",
+        "place":"Tirunelveli - salem",
+        "name":"Petrolium",
+        "company":"vishnu ltd..",
+        "amount":10000
+    },
+    {   "pic":"petroleum-2.jpg",
+        "place":"Madurai - salem",
+        "name":"Petrolium",
+        "company":"vishnu ltd..",
+        "amount":2000
+
+    }
+    ]
+}

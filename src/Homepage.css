@@ -1,0 +1,52 @@
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.nav_title{
+    
+    color: white;
+    margin-left: 20px;
+}
+
+.search-box{
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.search{
+    background-color: white;
+    height: 30px;
+    display: flex;
+    border-radius: 50px;
+    padding: 5px 5px;
+}
+
+.inp{
+    border: none;
+    background: none;
+    outline-style: none;
+    margin-left: 5px;
+}
+
+.searchimg{
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+
+.post{
+    margin-left: 10px;
+
+}
+
+.postinp{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+}
+
