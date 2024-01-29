@@ -6,6 +6,8 @@ import pic1 from "./goodsimage.jpg";
 import pic2 from "./container-on-hcv-fedex.jpg";
 import pic3 from "./petroleum-2.jpg";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Mappopup from "./Mappopup";
 
 const Homepage = () => {
   const job1 = [
@@ -36,11 +38,16 @@ const Homepage = () => {
   ];
 
     const navigate=useNavigate();
+    const [openmodal,setOpenmodal] =useState(false)
+
+    const handleClick=() =>{
+      setOpenmodal(true)
+    }
  
   return (
     <main>
       <div className="navbar navbar-expand-lg navbar-light bg-primary  justify-content-between align-items-center">
-        <div className="navbar-brand">
+        <div className="navbar-brand"> 
           <h4 className="nav_title">Happy Trucking!!</h4>
         </div>
         <div className="search-box">
@@ -56,9 +63,11 @@ const Homepage = () => {
 
       <div>
         {job1.map((items) => (
-          <Heropage jobs={items} />
-        ))}
+          <Heropage jobs={items }  open={handleClick}/>
+        ))} 
       </div>
+      {openmodal? <Mappopup close={setOpenmodal}/>:null}
+      
     </main>
   );
 };
