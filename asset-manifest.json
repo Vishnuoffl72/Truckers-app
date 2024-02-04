@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Truckers-app/static/css/main.736e5022.css",
-    "main.js": "/Truckers-app/static/js/main.045cefa1.js",
+    "main.js": "/Truckers-app/static/js/main.779d642d.js",
     "static/media/goodsimage.jpg": "/Truckers-app/static/media/goodsimage.c8c8db64c8fd208f8725.jpg",
     "static/media/container-on-hcv-fedex.jpg": "/Truckers-app/static/media/container-on-hcv-fedex.1fc3d3a84f29ee74675f.jpg",
     "static/media/petroleum-2.jpg": "/Truckers-app/static/media/petroleum-2.127f434f083dcd40e3a3.jpg",
     "index.html": "/Truckers-app/index.html",
     "main.736e5022.css.map": "/Truckers-app/static/css/main.736e5022.css.map",
-    "main.045cefa1.js.map": "/Truckers-app/static/js/main.045cefa1.js.map"
+    "main.779d642d.js.map": "/Truckers-app/static/js/main.779d642d.js.map"
   },
   "entrypoints": [
     "static/css/main.736e5022.css",
-    "static/js/main.045cefa1.js"
+    "static/js/main.779d642d.js"
   ]
 }
