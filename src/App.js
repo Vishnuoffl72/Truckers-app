@@ -11,7 +11,7 @@ function App() {
     <div className='base'>
       {/* <Loginpage /> */}
       <BrowserRouter>
-        <Routes>
+        <Routes basename="/Truckers-app">
           <Route path='/' element={<Homepage />}/>
           <Route path='/Postjob' element={< Postpage />}/>
         </Routes>
