@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./search-b.png";
 import './Postpage.css'
 import { useNavigate } from "react-router-dom";
+import axios from 'axios'
 
 const Postpage = () => {
+
+  const[goods,setGoods]=useState()
+  const[pickup,setPickup]=useState()
+  const[destination,setDestination]=useState()
+  const[price,setPrice]=useState()
+  const[weight,setWeight]=useState()
+
+  const Submit =(e) => {
+    e.preventDefault();
+    axios.post("http://localhost:27017/Postpage",{goods,pickup,destination,price,weight})
+    .then(result => console.log(result))
+    .catch(err => console.log(err))
+  } 
 
   const navigate=useNavigate();
   return (
@@ -29,7 +43,7 @@ const Postpage = () => {
       {/* Main start */}
 
       <div className="container postcontainer">
-        <form action="" className="postform">
+        <form action="" className="postform" onSubmit={Submit} >
           <div className="row">
             <div className="col-12">
               <label htmlFor="inp_type" className="form-label">Goods Type</label>
@@ -37,6 +51,7 @@ const Postpage = () => {
                 id="inp_type"
                 className="form-control"
                 placeholder="Enter the type of the load"
+                onChange={(e) => setGoods(e.target.value)}
               />
 
             </div>
@@ -48,6 +63,7 @@ const Postpage = () => {
                 id="inp_pickup"
                 className="form-control"
                 placeholder="Enter your pickup location"
+                onChange={(e) => setPickup(e.target.value)}
               />
             </div>
             <div className="col-6">
@@ -56,6 +72,7 @@ const Postpage = () => {
                   id="inp_destination"
                   className="form-control"
                   placeholder="Enter drop location"
+                  onChange={(e) => setDestination(e.target.value)}
 
                 />
             </div>
@@ -66,6 +83,7 @@ const Postpage = () => {
               <input type="text" 
                 id="inp_price"
                 className="form-control"
+                onChange={(e) => setPrice(e.target.value)}
               />
             </div>
             <div className="col-6">
@@ -73,6 +91,7 @@ const Postpage = () => {
               <input type="text"
                 id="inp_weight"
                 className="form-control"
+                onChange={(e) => setWeight(e.target.value)}
               />
             </div>
           </div>
@@ -95,9 +114,9 @@ const Postpage = () => {
               />
             </div>
           </div>
-          <div className="row">
-            <div className="col-4 inp_button align-self-end">
-              <button className="postinside btn btn-primary">Post Job</button>
+          <div className="row text-end">
+            <div className="col-12 my-3">
+              <button className="postinside btn btn-primary" type="submit">Post Job</button>
             </div>
           </div>
         </form>

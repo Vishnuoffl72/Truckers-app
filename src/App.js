@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes basename="/Truckers-app">
           <Route path='/' element={<Homepage />}/>
-          <Route path='/Postjob' element={< Postpage />}/>
+          <Route path='/Postpage' element={< Postpage />}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -56,7 +56,7 @@ const Homepage = () => {
             <img src={logo} alt="" className="searchimg" />
           </div>
           <div className="post">
-            <button className="postinp" onClick={() => navigate('Postjob')}>Post Job</button>
+            <button className="postinp" onClick={() => navigate('Postpage')}>Post Job</button>
           </div>
         </div>
       </div>
